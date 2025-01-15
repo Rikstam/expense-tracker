@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Expenses extends StatefulWidget {
-  const Expenses({Key? key}) : super(key: key);
+  const Expenses({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -16,9 +16,10 @@ class _ExpensesState extends State<Expenses> {
       appBar: AppBar(
         title: const Text('Expenses'),
       ),
-      body: const Center(
-        child: Text('Expenses'),
-      ),
+      body: Column(children: const [
+        Text('The chart'),
+        Text('The list'),
+      ]),
     );
   }
 }
